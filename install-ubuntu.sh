@@ -44,7 +44,7 @@ fi
 
 echo "Configuring Wireshark sources for ws_dissector compilation..."
 cd ${WIRESHARK_SRC_PATH}
-cmake --disable-wireshark . > /dev/null 2>&1
+cmake --enable-wireshark . > /dev/null 2>&1
 if [ $? != 0 ]; then
     echo "Error when executing '${WIRESHARK_SRC_PATH}/cmake -DBUILD_wireshark .'"
     echo "You need to manually fix it before continuation. Exiting with status 3"
