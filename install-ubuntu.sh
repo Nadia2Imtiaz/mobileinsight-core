@@ -20,7 +20,7 @@ echo "Upgrading MobileInsight..."
 yes | ./uninstall.sh
 
 # Wireshark version to install
-ws_ver=3.2.7
+ws_ver=3.4.7
 
 # Use local library path
 #TODO
