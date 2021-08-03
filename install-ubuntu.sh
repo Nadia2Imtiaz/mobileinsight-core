@@ -44,12 +44,12 @@ fi
 
 echo "Configuring Wireshark sources for ws_dissector compilation..."
 cd ${WIRESHARK_SRC_PATH}
-cmake --enable-wireshark . > /dev/null 2>&1
-if [ $? != 0 ]; then
-    echo "Error when executing '${WIRESHARK_SRC_PATH}/cmake -DBUILD_wireshark .'"
-    echo "You need to manually fix it before continuation. Exiting with status 3"
-    exit 3
-fi
+#cmake --enable-wireshark . > /dev/null 2>&1
+#if [ $? != 0 ]; then
+ #  echo "Error when executing '${WIRESHARK_SRC_PATH}/cmake -DBUILD_wireshark .'"
+ #  echo "You need to manually fix it before continuation. Exiting with status 3"
+ #   exit 3
+#fi
 
 echo "Check if proper version of wireshark dynamic library exists in system path..."
 
